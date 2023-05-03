@@ -16,11 +16,4 @@
     if (mysqli_connect_errno() > 0) {
         die("Connection failed: ". mysqli_connect_errno());
     }
-
-    echo "Connected successfully"."<br>";
-
-    mysqli_close($connect);
-
-    echo "Closed successfully";
-
 ?>
