@@ -1,5 +1,5 @@
 <div class="card mb-3">
-    <div class="row">
+    <a href="animal-detail.php?id=<?= $animal["id"]; ?>" class="row">
         <div class="col-md-4">
             <img src="img/<?= $animal['imageUrl'] ?>" class="img-fluid rounded-start">
         </div>
@@ -9,5 +9,5 @@
                 <p><?= $animal["description"] ?></p>
             </div>
         </div>
-    </div>
+    </a>
 </div>
