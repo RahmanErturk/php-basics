@@ -102,4 +102,104 @@ foreach ($products as $product) {
     echo $product[0]." = ".$product[1]."<br>";
 }
 
+    # switch
+
+    $num = 5;
+
+    switch ($num) {
+        case 4:
+            echo "four"; 
+            break;
+        case 5:
+            echo "five"; 
+            break;
+        case 6:
+            echo "six"; 
+            break;
+        default:
+            echo "yanlis";
+            break;
+    }
+    echo "<br>";
+
+    $note = 60;
+
+    switch (true) {
+        case $note >= 0 && $note < 45:
+            echo "your note is 1<br>";
+            break;
+        case $note >= 45 && $note < 55:
+            echo "your note is 2<br>";
+            break;
+        case $note >= 55 && $note < 70:
+            echo "your note is 3<br>";
+            break;
+        case $note >= 70 && $note < 85:
+            echo "your note is 4<br>";
+            break;
+        case $note >= 85 && $note <= 100:
+            echo "your note is 5<br>";
+            break;
+        
+        default:
+            echo "wrong value<br>";
+            break;
+    }
+
+    $mounth = "january";
+
+    switch ($mounth) {
+        case 'december':
+        case 'january':
+        case 'february':
+            echo "it is winter";
+            break;
+        case 'march':
+        case 'april':
+        case 'may':
+            echo "it is spring";
+            break;
+        
+        default:
+            echo "wrong value";
+            break;
+    }
+    echo "<br>";
+
+
+    # ternary operator
+    $age = 26;
+    $salary = 1800;
+    echo ($age >= 18) 
+        ? ($salary >= 2000
+            ? "kredi cekebilir"
+            : "maas yetersiz")
+        : "kredi cekemez";
+    echo "<br>";
+
+
+    # while loop
+    $x = 1;
+
+    while ($x <= 10) {
+        if ($x == 10) echo $x."<br>";
+        else echo $x.", ";
+        $x++;
+    }
+
+    for ($i=0; $i <= 100 ; $i++) { 
+        if ($i == 25) {
+            break;
+        }
+        if ($i % 2 == 1) {
+            continue;
+        }
+        echo $i." ";
+    }
+    echo "<br>";
+
+    
+    # date
+    echo date("d/m/y")."<br>"; 
+
 ?>
